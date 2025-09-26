@@ -8,6 +8,6 @@ public class SrOmar extends Adult{
 
     @Override
     public String quotes() {
-        return "Tragico, tragico...";
+        return "Traggic, traggic...";
     }
 }

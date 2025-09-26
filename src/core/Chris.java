@@ -8,7 +8,6 @@ public class Chris extends Child{
 
     @Override
     public String quotes() {
-        //“You know…”
-        return "Sacomé, né";
+        return "You know…";
     }
 }

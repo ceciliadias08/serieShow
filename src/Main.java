@@ -19,19 +19,19 @@ public class Main {
 
         boolean executing = true;
         while (executing == true){
-            System.out.println("\n=== Menu Chris-POO ===");
-            System.out.println("1. Registrar personagens padrão");
-            System.out.println("2. Listar personagens");
-            System.out.println("3. Frases de efeito (todos)");
-            System.out.println("4. Buscar personagem por nome");
-            System.out.println("5. Remover personagem por nome");
-            System.out.println("6. Adicionar personagem manualmente");
-            System.out.println("7. Atualizar idade de um personagem");
-            System.out.println("8. Chris estudar");
-            System.out.println("9. Julius trabalhar e calcular conta");
-            System.out.println("10. Criar um EXEMPLO de episodio e imprimir");
-            System.out.println("11. Sair");
-            System.out.print("Escolha: ");
+            System.out.println("\n=== Menu Chris-OOP ===");
+            System.out.println("1. Register default characters");
+            System.out.println("2. List characters");
+            System.out.println("3. Catchphrases (all)");
+            System.out.println("4. Search character by name");
+            System.out.println("5. Remove character by name");
+            System.out.println("6. Add character manually");
+            System.out.println("7. Update a character's age");
+            System.out.println("8. Chris study");
+            System.out.println("9. Julius work and calculate account");
+            System.out.println("10. Create an EXAMPLE episode and print");
+            System.out.println("11. Exit");
+            System.out.print("Select: ");
 
             int option;
             Scanner sc = new Scanner(System.in);
@@ -113,23 +113,20 @@ public class Main {
                     break;
                 case 9:
                     julius.work("delivery", 12);
-                    julius.calcularConta(5.32);
+                    julius.calculateAmount(5.32);
                     break;
                 case 10:
-                    episode = new Episode(3, 6, "Todo mundo odeia acao de gracas", "Chris quer passar o dia de acao em um lugar diferente da familia");
-                    episode.addEvent(new Event("Data comemorativa", "Chris quer celebrar o dia de acao de gracas com o Greg", "Casa do Greg").addParticipant(chris).addParticipant(greg));
+                    episode = new Episode(3, 6, "Everybody hates Thanksgiving", "Chris wants to spend Thanksgiving somewhere different from his family.");
+                    episode.addEvent(new Event("Holiday", "Chris wants to celebrate Thanksgiving with Greg", "Greg's House").addParticipant(chris).addParticipant(greg));
                     episode.print();
                     break;
                 case 11:
                     executing = false;
-                    System.out.println("Programa encerrado, ate logo!");
+                    System.out.println("Program closed, see you soon!");
                     break;
                 default:
-                    System.out.println("Opcao invalida, tente novamente com as opcoes de 1 a 11");
+                    System.out.println("Invalid option, try again with options 1 to 11");
                     break;
-
-                    //Como funciona o Java? 4 passos
-                    //
             }
         }
 

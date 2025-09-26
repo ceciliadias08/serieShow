@@ -8,6 +8,6 @@ public class Rochelle extends Adult{
 
     @Override
     public String quotes() {
-        return "Eu nao preciso disso, meu marido tem 2 empregos";
+        return "I don't need this, my husband has 2 jobs";
     }
 }

@@ -8,7 +8,6 @@ public class Tonya extends Child {
 
     @Override
     public String quotes(){
-        // "I’m gonna tell Mama!"
-        return "Eu vou contar pra mamãe!";
+        return "I’m gonna tell Mama!";
     }
 }

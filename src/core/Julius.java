@@ -8,12 +8,12 @@ public class Julius extends Adult{
 
     @Override
     public String quotes() {
-        return "Isso custou 32 centavos";
+        return "This cost 32 cents";
     }
 
-    public double calcularConta(double valor) {
-        double total = Math.max(0, valor * 0.90); // regra fixa didática (sem Strategy)
-        System.out.println("Julius calculou economia fixa: de $" + valor + " por $" + total);
+    public double calculateAmount(double value) {
+        double total = Math.max(0, value * 0.90); // fixed didactic rule (without Strategy)
+        System.out.println("Julius calculated fixed savings: of $" + value + " per $" + total);
         return total;
     }
 }
